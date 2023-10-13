@@ -227,9 +227,18 @@ address {
   top: 0;
   left: 0;
   display: block;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-.modal {
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+. .modal {
   width: 408px;
   height: 584px;
   background-color: #fcfcfc;
@@ -259,7 +268,8 @@ address {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover {
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: #404bbf;
 }
 
@@ -333,13 +343,14 @@ address {
 .modal-text {
   width: 100%;
   border-radius: 4px;
-  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  border: 1px solid var rgba(46, 47, 66, 0.4);
   height: 120px;
   background-color: inherit;
-  padding-left: 16px;
   outline: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 16px;
+  padding: 8px 16px;
+  resize: none;
 }
 
 /* ------------------------ */
