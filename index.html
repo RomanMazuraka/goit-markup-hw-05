@@ -729,38 +729,39 @@
               </svg>
             </div>
           </div>
+
           <div class="textarea-form">
-            <label for="comment" class="modal-label">Comment</label>
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               class="modal-text"
               placeholder="Text input"
             ></textarea>
           </div>
+
+          <!-- checkbox -->
+
+          <div class="modal-checkbox">
+            <input
+              class="checkbox-item visually-hidden"
+              type="checkbox"
+              name="modal-check"
+              id="modal-check"
+              value="true"
+            />
+            <label for="modal-check" class="modal-check-label">
+              <span
+                ><svg class="modal-check-icon" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-vector-chekbox"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="hero-button" type="submit">Send</button>
         </form>
-
-        <!-- checkbox -->
-
-        <div class="modal-checkbox">
-          <input
-            class="checkbox-item visually-hidden"
-            type="checkbox"
-            name="modal-check"
-            id="modal-check"
-            value="true"
-          />
-          <label for="modal-check" class="modal-check-label">
-            <span
-              ><svg class="modal-check-icon" width="16" height="16">
-                <use
-                  href="./images/icons.svg#icon-vector-chekbox"
-                ></use></svg></span
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-          </label>
-        </div>
-        <button class="hero-button" type="submit">Send</button>
       </div>
     </div>
   </body>
